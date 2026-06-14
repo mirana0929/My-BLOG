@@ -1,0 +1,308 @@
+/* 基礎與字體設定 */
+body {
+    background-color: #F8F5F0;
+    /* 日系米白背景 */
+    color: #4A3C31;
+    /* 深咖啡色字體 */
+    font-family: 'Noto Serif TC', '微軟正黑體', serif;
+    line-height: 1.8;
+    overflow-x: hidden;
+}
+
+/* 區塊共用間距 */
+.section-padding {
+    padding: 100px 0;
+}
+
+/* --- 導覽列 (Navbar) --- */
+.custom-navbar {
+    background-color: rgba(248, 245, 240, 0.95);
+    border-bottom: 1px solid #E5DFD3;
+    -webkit-backdrop-filter: blur(8px);
+    /* 新增：蘋果裝置相容前綴 */
+    backdrop-filter: blur(8px);
+    /* 毛玻璃效果 */
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.custom-navbar .logo {
+    font-weight: 600;
+    color: #6B4E38;
+    letter-spacing: 2px;
+}
+
+.custom-navbar .nav-link {
+    color: #7A6352;
+    font-size: 0.95rem;
+    margin-left: 20px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* 導覽列文字底線延展動畫 */
+.custom-navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 50%;
+    background-color: #C18A5D;
+    /* 橡木色底線 */
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.custom-navbar .nav-link:hover::after {
+    width: 100%;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #C18A5D;
+}
+
+/* --- 新增：針對平板與手機版 (漢堡選單展開時) 的專屬優化 --- */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: rgba(248, 245, 240, 0.98);
+        /* 展開選單加上接近實體的背景色 */
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 15px;
+        box-shadow: 0 10px 25px rgba(74, 60, 49, 0.1);
+    }
+
+    .custom-navbar .nav-link {
+        margin-left: 0;
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
+}
+
+/* --- 首屏視覺 (Hero) --- */
+.hero {
+    height: 100vh;
+    color: #3D2B1F;
+    position: relative;
+    overflow: hidden;
+    /* 確保背景圖片放大時不會超出螢幕邊緣 */
+}
+
+/* 背景圖片層與緩慢放大動畫 */
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('image/home.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    animation: bgZoom 20s linear infinite alternate;
+}
+
+/* 背景緩慢縮放的關鍵影格 */
+@keyframes bgZoom {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.15);
+    }
+
+    /* 緩慢放大到 1.15 倍 */
+}
+
+/* 溫暖的半透明遮罩層 */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(248, 245, 240, 0.65);
+    z-index: 0;
+}
+
+/* 標題浮動呼吸動畫 */
+.hero-title {
+    letter-spacing: 4px;
+    animation: floatText 4s ease-in-out infinite;
+}
+
+@keyframes floatText {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.hero-subtitle {
+    color: #7A6352;
+    letter-spacing: 2px;
+}
+
+/* --- 共用標題設計 --- */
+.section-title {
+    color: #6B4E38;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+}
+
+/* 標題下方的裝飾短線 */
+.section-title::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #C18A5D;
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+/* --- 關於我 --- */
+.custom-shadow {
+    box-shadow: 0 15px 35px rgba(74, 60, 49, 0.08);
+    /* 柔和的棕色陰影 */
+}
+
+/* 圖片微放大懸浮效果 */
+.floating-img {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.floating-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 40px rgba(74, 60, 49, 0.12);
+}
+
+/* --- 生活紀錄 --- */
+.bg-light-wood {
+    background-color: #FDFBF8;
+    /* 稍微亮一點的米白，做出區塊區隔 */
+}
+
+.custom-card {
+    background: #FFFFFF;
+    border: 1px solid #E5DFD3;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.custom-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(74, 60, 49, 0.12);
+}
+
+.custom-card img {
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 1px solid #E5DFD3;
+}
+
+.custom-card .card-title {
+    color: #4A3C31;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.custom-card .card-text {
+    color: #7A6352;
+    font-size: 0.95rem;
+}
+
+/* --- 作品分享 (輪播圖) --- */
+.custom-carousel img {
+    object-fit: cover;
+    height: 600px;
+    /* 固定輪播圖高度 */
+}
+
+/* 客製化輪播圖上的文字浮雕框 */
+.custom-caption {
+    background: rgba(248, 245, 240, 0.85);
+    /* 半透明米白底 */
+    color: #4A3C31;
+    padding: 25px 40px;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    bottom: 40px;
+    width: fit-content;
+    margin: 0 auto;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.custom-caption h5 {
+    color: #6B4E38;
+    font-weight: 600;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.custom-caption p {
+    margin-bottom: 0;
+    color: #7A6352;
+}
+
+/* --- 頁尾 --- */
+.custom-footer {
+    background-color: #EFEBE3;
+    color: #8C7866;
+    font-size: 0.9rem;
+}
+
+/* --- 核心動態：滾動滑動淡入 --- */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(60px);
+    /* 初始往下偏 */
+    transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    will-change: opacity, transform;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- 自訂輪播圖下方的圓圈指示器 --- */
+.custom-indicators {
+    margin-bottom: 10px;
+    /* 調整圓點離圖片底部的距離 */
+}
+
+.custom-indicators [data-bs-target] {
+    width: 8px;
+    /* 圓點的寬度 */
+    height: 8px;
+    /* 圓點的高度 */
+    border-radius: 50%;
+    /* 變成完美的圓形 */
+    background-color: #FFFFFF;
+    /* 沒被選中時的顏色（白色） */
+    opacity: 0.6;
+    /* 沒被選中時稍微透明 */
+    border: none;
+    margin: 0 4px;
+    /* 圓點之間的間距 */
+    transition: all 0.3s ease;
+}
+
+.custom-indicators .active {
+    background-color: #C18A5D;
+    /* 被選中時變成橡木色 */
+    opacity: 1;
+    /* 完全不透明 */
+    transform: scale(1.2);
+    /* 選中時稍微放大一點點，增加層次感 */
+}
