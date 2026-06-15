@@ -1,0 +1,14 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 504: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
+    zorder 0
+             ^
+
+File "game/script.rpy", line 513: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
+    zorder 100
+              ^
+
+Ren'Py Version: Ren'Py 8.4.1.25072401
+Wed Dec 17 01:46:44 2025
