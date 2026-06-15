@@ -23,23 +23,13 @@ document.addEventListener("DOMContentLoaded", function () {
     // 2. 生活紀錄分頁切換
     const lifePageEls = document.querySelectorAll('.life-page');
     const lifeDotEls = document.querySelectorAll('.life-page-dot');
-    let currentLifePage = 0;
 
     function showLifePage(index) {
         lifePageEls.forEach(function (p) { p.classList.add('d-none'); });
         lifeDotEls.forEach(function (d) { d.classList.remove('active'); });
         lifePageEls[index].classList.remove('d-none');
         lifeDotEls[index].classList.add('active');
-        currentLifePage = index;
     }
-
-    document.getElementById('lifePrevBtn').addEventListener('click', function () {
-        showLifePage((currentLifePage - 1 + lifePageEls.length) % lifePageEls.length);
-    });
-
-    document.getElementById('lifeNextBtn').addEventListener('click', function () {
-        showLifePage((currentLifePage + 1) % lifePageEls.length);
-    });
 
     lifeDotEls.forEach(function (dot, i) {
         dot.addEventListener('click', function () { showLifePage(i); });
