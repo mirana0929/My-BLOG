@@ -83,111 +83,150 @@
     <section id="life" class="py-5 bg-light-wood fade-in-section section-padding">
         <div class="container">
             <h2 class="section-title text-center mb-5 d-block mx-auto">生活紀錄</h2>
-            <div class="row g-4">
 
-                <div class="col-md-4">
-                    <div class="card custom-card h-100">
-                        <div id="lifeCarousel1" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators custom-indicators">
-                                <button type="button" data-bs-target="#lifeCarousel1" data-bs-slide-to="0"
-                                    class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#lifeCarousel1" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#lifeCarousel1" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#lifeCarousel1" data-bs-slide-to="3"
-                                    aria-label="Slide 4"></button>
-                            </div>
+            <div id="lifePages" class="position-relative">
 
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="image/G-1.jpg" class="d-block w-100 card-img-top" alt="畢業典禮 1">
+                <div class="life-page px-4" id="lifePage0">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card custom-card h-100">
+                                <div id="lifeCarousel1" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators custom-indicators">
+                                        <button type="button" data-bs-target="#lifeCarousel1" data-bs-slide-to="0"
+                                            class="active" aria-current="true"></button>
+                                        <button type="button" data-bs-target="#lifeCarousel1"
+                                            data-bs-slide-to="1"></button>
+                                        <button type="button" data-bs-target="#lifeCarousel1"
+                                            data-bs-slide-to="2"></button>
+                                        <button type="button" data-bs-target="#lifeCarousel1"
+                                            data-bs-slide-to="3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active"><img src="image/G-1.jpg"
+                                                class="d-block w-100 card-img-top" alt="畢業典禮 1"></div>
+                                        <div class="carousel-item"><img src="image/G-2.jpg"
+                                                class="d-block w-100 card-img-top" alt="畢業典禮 2"></div>
+                                        <div class="carousel-item"><img src="image/G-3.jpg"
+                                                class="d-block w-100 card-img-top" alt="畢業典禮 3"></div>
+                                        <div class="carousel-item"><img src="image/G-4.jpg"
+                                                class="d-block w-100 card-img-top" alt="畢業典禮 4"></div>
+                                    </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <img src="image/G-2.jpg" class="d-block w-100 card-img-top" alt="畢業典禮 2">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="image/G-3.jpg" class="d-block w-100 card-img-top" alt="畢業典禮 3">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="image/G-4.jpg" class="d-block w-100 card-img-top" alt="畢業典禮 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">大學畢業典禮</h5>
+                                    <p class="card-text">2026.06.13 在朝陽的四年時光，在這天劃下句點。</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">大學畢業典禮</h5>
-                            <p class="card-text">2026.06.13 在朝陽的四年時光，在這天劃下句點。</p>
+
+                        <div class="col-md-4">
+                            <div class="card custom-card h-100">
+                                <div id="lifeCarousel2" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators custom-indicators">
+                                        <button type="button" data-bs-target="#lifeCarousel2" data-bs-slide-to="0"
+                                            class="active" aria-current="true"></button>
+                                        <button type="button" data-bs-target="#lifeCarousel2"
+                                            data-bs-slide-to="1"></button>
+                                        <button type="button" data-bs-target="#lifeCarousel2"
+                                            data-bs-slide-to="2"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active"><img src="image/S-1.jpg"
+                                                class="d-block w-100 card-img-top" alt="畢業專題成果展 1"></div>
+                                        <div class="carousel-item"><img src="image/S-2.jpg"
+                                                class="d-block w-100 card-img-top" alt="畢業專題成果展 2"></div>
+                                        <div class="carousel-item"><img src="image/S-3.jpg"
+                                                class="d-block w-100 card-img-top" alt="畢業專題成果展 3"></div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">畢業專題成果展</h5>
+                                    <p class="card-text">2026.12.19 114學年度畢業專題成果展</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card custom-card h-100">
+                                <div id="lifeCarousel3" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators custom-indicators">
+                                        <button type="button" data-bs-target="#lifeCarousel3" data-bs-slide-to="0"
+                                            class="active" aria-current="true"></button>
+                                        <button type="button" data-bs-target="#lifeCarousel3"
+                                            data-bs-slide-to="1"></button>
+                                        <button type="button" data-bs-target="#lifeCarousel3"
+                                            data-bs-slide-to="2"></button>
+                                        <button type="button" data-bs-target="#lifeCarousel3"
+                                            data-bs-slide-to="3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active"><img src="image/home.JPG"
+                                                class="d-block w-100 card-img-top" alt="日本 1"></div>
+                                        <div class="carousel-item"><img src="image/J-2.jpg"
+                                                class="d-block w-100 card-img-top" alt="日本 2"></div>
+                                        <div class="carousel-item"><img src="image/J-3.jpg"
+                                                class="d-block w-100 card-img-top" alt="日本 3"></div>
+                                        <div class="carousel-item"><img src="image/J-4.jpg"
+                                                class="d-block w-100 card-img-top" alt="日本 4"></div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">奈良之旅</h5>
+                                    <p class="card-text">2026.02.10 第一次出國到奈良有很好的旅行體驗</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card custom-card h-100">
-                        <div id="lifeCarousel2" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators custom-indicators">
-                                <button type="button" data-bs-target="#lifeCarousel2" data-bs-slide-to="0"
-                                    class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#lifeCarousel2" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#lifeCarousel2" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
+                <div class="life-page px-4 d-none" id="lifePage1">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card custom-card h-100">
+                                <div id="lifeCarousel4" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators custom-indicators">
+                                        <button type="button" data-bs-target="#lifeCarousel4" data-bs-slide-to="0"
+                                            class="active" aria-current="true"></button>
+                                        <button type="button" data-bs-target="#lifeCarousel4"
+                                            data-bs-slide-to="1"></button>
+                                        <button type="button" data-bs-target="#lifeCarousel4"
+                                            data-bs-slide-to="2"></button>
+                                        <button type="button" data-bs-target="#lifeCarousel4"
+                                            data-bs-slide-to="3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active"><img src="image/home.JPG"
+                                                class="d-block w-100 card-img-top" alt="日本 1"></div>
+                                        <div class="carousel-item"><img src="image/J-2.jpg"
+                                                class="d-block w-100 card-img-top" alt="日本 2"></div>
+                                        <div class="carousel-item"><img src="image/J-3.jpg"
+                                                class="d-block w-100 card-img-top" alt="日本 3"></div>
+                                        <div class="carousel-item"><img src="image/J-4.jpg"
+                                                class="d-block w-100 card-img-top" alt="日本 4"></div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">實習</h5>
+                                    <p class="card-text">2026.02.10 第一次出國到奈良有很好的旅行體驗</p>
+                                </div>
                             </div>
-
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="image\S-1.jpg" class="d-block w-100 card-img-top" alt="畢業專題成果展 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="image\S-2.jpg" class="d-block w-100 card-img-top" alt="畢業專題成果展 2">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="image\S-3.jpg" class="d-block w-100 card-img-top" alt="畢業專題成果展 3">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">畢業專題成果展</h5>
-                            <p class="card-text">2026.12.19 114學年度畢業專題成果展</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card custom-card h-100">
-                        <div id="lifeCarousel3" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators custom-indicators">
-                                <button type="button" data-bs-target="#lifeCarousel3" data-bs-slide-to="0"
-                                    class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#lifeCarousel3" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#lifeCarousel3" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#lifeCarousel3" data-bs-slide-to="3"
-                                    aria-label="Slide 4"></button>
-                            </div>
+                <button class="carousel-control-prev" type="button" id="lifePrevBtn" style="width: 5%;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" id="lifeNextBtn" style="width: 5%;">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
 
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="image/home.JPG" class="d-block w-100 card-img-top" alt="日本 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="image/J-2.jpg" class="d-block w-100 card-img-top" alt="日本 2">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="image/J-3.jpg" class="d-block w-100 card-img-top" alt="日本 3">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="image/J-4.jpg" class="d-block w-100 card-img-top" alt="日本 4">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">奈良之旅</h5>
-                            <p class="card-text">2026.02.10 第一次出國到奈良有很好的旅行體驗 </p>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="d-flex justify-content-center mt-3 gap-2">
+                <button class="life-page-dot active" data-page="0"></button>
+                <button class="life-page-dot" data-page="1"></button>
             </div>
         </div>
     </section>
